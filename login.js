@@ -3,7 +3,7 @@ const email = document.querySelector('#email')
 const pass = document.querySelector('#pass')
 const alert =document.querySelector('.alert')
  
-const sprawdz = (e) => {
+const check = (e) => {
     e.preventDefault()
     localStorageUser = JSON.parse(localStorage.getItem('data'))
     if (localStorageUser === null) {
@@ -29,4 +29,4 @@ const sprawdz = (e) => {
 }
 
 
-btn.addEventListener('click', sprawdz)
+btn.addEventListener('click', check)

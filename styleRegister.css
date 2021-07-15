@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif !important;
     height: 100vh;
     display: flex;
@@ -14,19 +16,19 @@ body{
     background-color: #A7FFEB;
 }
 
-.containerR{
+.containerR {
     position: relative;
     width: 286px;
     height: 570px;
-    border: 6px solid rgba(0,0,0,0.4);
+    border: 6px solid rgba(0, 0, 0, 0.4);
     border-radius: 30px;
-    box-shadow: 3px 3px 10px  rgba(0,0,0,0.4);
-    
-        background: linear-gradient(#fff,#eee);
-     overflow: hidden; 
-     z-index: 3; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(#fff, #eee);
+    overflow: hidden;
+    z-index: 3;
 }
-.containerR::before{
+
+.containerR::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -34,11 +36,12 @@ body{
     transform: translateX(-50%);
     width: 100px;
     height: 15px;
-    background-color: rgba(0,0,0,0.4);
-    border-bottom-left-radius:7px ;
-    border-bottom-right-radius:7px ;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
-header{
+
+header {
     overflow: hidden;
     position: relative;
     display: flex;
@@ -47,14 +50,17 @@ header{
     z-index: 100;
     padding-bottom: 40px;
 }
-h2{
-    font-family: 'Poppins', sans-serif ;
+
+h2 {
+    font-family: 'Poppins', sans-serif;
 }
-.logo i{
+
+.logo i {
     color: #00BFA5;
     font-size: 2rem;
 }
-main{
+
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -62,41 +68,44 @@ main{
     justify-content: space-around;
     padding: 5px;
 }
-main form{
-   
+
+main form {
+
     width: 80%;
     height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-main form input{
-width: 100%;
-height: 35px;
-padding: 0 5px;
-border-radius: 15px;
-outline: none;
-border: 1px solid #fff;
-transition: border 0.3s;
-}
-main form input:hover{
-    border:2px solid lightblue;
+
+main form input {
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #fff;
+    transition: border 0.3s;
 }
 
-footer{
-   
+main form input:hover {
+    border: 2px solid lightblue;
+}
+
+footer {
+
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-    
 }
-footer .btn{
+
+footer .btn {
     margin-bottom: 20px;
 }
-footer .btn a{
+
+footer .btn a {
     text-decoration: none;
     padding: 10px 60px;
     background-color: #00BFA5;
@@ -105,44 +114,45 @@ footer .btn a{
     transition: 0.3s;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
 }
-footer .btn:hover{
-   transform: scale(0.9);
+
+footer .btn:hover {
+    transform: scale(0.9);
 
 }
-footer .p{
-   text-align: center;
-  
+
+footer .p {
+    text-align: center;
 }
-footer .p a{
+
+footer .p a {
     text-decoration: none;
     color: #00BFA5;
     font-size: 1.1rem;
 }
-.circle{
+
+.circle {
     position: absolute;
     top: -50px;
     right: -50px;
     width: 120px;
     height: 120px;
-    background-color:#00BFA5 ;
+    background-color: #00BFA5;
     z-index: -1;
     border-radius: 50%;
-
-    
 }
-.circle1{
+
+.circle1 {
     position: absolute;
     top: -35px;
     right: -35px;
     width: 120px;
     height: 120px;
-    background-color:#c7eee9 ;
+    background-color: #c7eee9;
     z-index: -2;
     border-radius: 50%;
-
-    
 }
-main .image{
+
+main .image {
     width: 100%;
     height: 100px;
     background: url('img/recepcja.png');
@@ -150,7 +160,8 @@ main .image{
     background-repeat: no-repeat;
     background-position: center;
 }
-main .form{
+
+main .form {
     width: 80%;
     height: 180px;
     display: flex;
