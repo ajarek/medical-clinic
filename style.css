@@ -17,34 +17,27 @@ body {
 
 .container {
     position: relative;
-    width: 286px;
+    width: 400px;
     height: 570px;
     padding: 20px;
-    border: 6px solid rgba(0, 0, 0, 0.4);
-    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
     background: linear-gradient(#eee, #fff);
-}
-
-.container::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 .logo i {
+
     color: #00BFA5;
     font-size: 2rem;
 }
@@ -85,9 +78,16 @@ footer .btn a {
     color: white;
     transition: 0.3s;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
+    border: none;
 }
 
 footer .btn:hover {
     transform: scale(0.9);
+}
 
+@media (max-width:400px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
 }
