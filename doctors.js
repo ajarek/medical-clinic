@@ -1,11 +1,13 @@
 const doctors = document.querySelectorAll('.swiper-slide img')
 const container = document.querySelector('.swiper-container')
 const h5 = document.querySelector('.h5 h5')
+const time = document.querySelector('.time')
 
 const daysInMonth=(month, year)=>{
     return new Date(year, month, 0).getDate();
 }
 let d=new Date
+time.innerHTML=d.toLocaleDateString()
 let mc=d.getMonth()+1
 
 
@@ -32,7 +34,7 @@ document.querySelectorAll('.items').forEach(dy=>{
     dy.addEventListener('click',(e)=>{
         
         e.target.classList.toggle('active')
-        h5.innerHTML=`Your visit will take place at 10:00 in day ${e.target.innerText} running month!`
+        h5.innerHTML=`Your visit will take place at 10:00 in day:${e.target.innerText} m-c:${mc}`
         h5.style.color='red'
         
 })

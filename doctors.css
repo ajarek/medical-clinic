@@ -26,6 +26,11 @@ body {
     background: linear-gradient(#fff, rgb(236, 226, 226));
     z-index: 3;
 }
+.time{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
 
 header {
     overflow: hidden;
@@ -37,9 +42,7 @@ header {
     padding-bottom: 40px;
 }
 
-h2 {
-    font-family: 'Poppins', sans-serif;
-}
+
 
 .logo i {
     color: #00BFA5;
